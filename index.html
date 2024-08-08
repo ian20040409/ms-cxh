@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ms-cxh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #202126;
+            margin: 0;
+            padding: 0;
+            color: #f0f0f0;
+            animation: fadeIn 1s ease-in;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: bounceIn 1s ease-in-out;
+        }
+        header h3 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        h1 {
+            color: #f0f0f0;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1:hover {
+            transform: translateY(-5px);
+        }
+        h3 {
+            color: #ccc;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #0066cc, #004d99);
+            background-size: 200% 200%;
+            animation: gradientShift 3s ease infinite, shimmer 2s linear infinite;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .button-link:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+        @keyframes shimmer {
+            0% {
+                background-position: -100% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>tested on Windows 11</h1>
+    </header>
+   
+<div class="container">
+    <h1>"Your organization requires Windows Hello"</h1>
+    <h3><a href="ms-cxh://nthentngconly" class="button-link">ms-cxh://nthentngconly</a></h3>
+
+    <h1>"You'll need the Internet for this."</h1>
+    <h3><a href="ms-cxh://aadwebauth" class="button-link">ms-cxh://aadwebauth</a></h3>
+
+    <h1>"Sign in"</h1>
+    <h3><a href="ms-cxh://mosetmsa" class="button-link">ms-cxh://mosetmsa</a></h3>
+
+    <h1>Finish setting up your device (MS ACCOUNT REQUIRED)</h1>
+    <h3><a href="ms-cxh://nth" class="button-link">ms-cxh://nth</a></h3>
+
+    <h1>OOBE Teamedition</h1>
+    <h3><a href="ms-cxh://frx/teamedition" class="button-link">ms-cxh://frx/teamedition/</a></h3>
+
+    <h1>fr oobe</h1>
+    <h3><a href="ms-cxh://frx/inclusive" class="button-link">ms-cxh://frx/inclusive/</a></h3>
+
+    <h1>Use Windows Hello with your account</h1>
+    <h3><a href="ms-cxh://nthaadormdm?ngc=enabled" class="button-link">ms-cxh://nthaadormdm?ngc=enabled/</a></h3>
+
+    <h1>Reset your PIN</h1>
+    <h3><a href="ms-cxh://nthaadngcreset" class="button-link">ms-cxh://nthaadngcreset/</a></h3>
+
+    <h1>Make a user account</h1>
+    <h3><a href="ms-cxh://setaddnewuser" class="button-link">ms-cxh://setaddnewuser</a></h3>
+
+    <h1>Recover your account</h1>
+    <h3><a href="ms-cxh://msasspr" class="button-link">ms-cxh://msasspr</a></h3>
+
+    <!-- New Links -->
+    <h1>Reset AAD PIN Authentication</h1>
+    <h3><a href="ms-cxh://AADPINRESETAUTH" class="button-link">ms-cxh://AADPINRESETAUTH</a></h3>
+
+    <h1>AAD Self-Service Password Reset</h1>
+    <h3><a href="ms-cxh://AADSSPR" class="button-link">ms-cxh://AADSSPR</a></h3>
+
+    <h1>AAD Web Authentication</h1>
+    <h3><a href="ms-cxh://AADWEBAUTH" class="button-link">ms-cxh://AADWEBAUTH</a></h3>
+
+    <h1>FRX AAD</h1>
+    <h3><a href="ms-cxh://FRX/AAD" class="button-link">ms-cxh://FRX/AAD</a></h3>
+
+    <h1>FRX Inclusive</h1>
+    <h3><a href="ms-cxh://FRX/INCLUSIVE" class="button-link">ms-cxh://FRX/INCLUSIVE</a></h3>
+
+    <h1>FRX Inclusive with Oobe Provisioning Status</h1>
+    <h3><a href="ms-cxh://FRX/INCLUSIVE?start=OobeProvisioningStatus" class="button-link">ms-cxh://FRX/INCLUSIVE?start=OobeProvisioningStatus</a></h3>
+
+    <h1>FRX Teamedition</h1>
+    <h3><a href="ms-cxh://FRX/TEAMEDITION" class="button-link">ms-cxh://FRX/TEAMEDITION</a></h3>
+
+    <h1>FRXRDX Inclusive</h1>
+    <h3><a href="ms-cxh://FRXRDXINCLUSIVE" class="button-link">ms-cxh://FRXRDXINCLUSIVE</a></h3>
+
+    <h1>MOSET AAD Local</h1>
+    <h3><a href="ms-cxh://MOSET/AADLOCAL" class="button-link">ms-cxh://MOSET/AADLOCAL</a></h3>
+
+    <h1>MOSET Connect to Work</h1>
+    <h3><a href="ms-cxh://MOSET/CONNECTTOWORK" class="button-link">ms-cxh://MOSET/CONNECTTOWORK</a></h3>
+
+    <h1>MOSET MAM Connect to Work</h1>
+    <h3><a href="ms-cxh://mosetmamconnecttowork?mode=mdm&username=%s&servername=%s" class="button-link">ms-cxh://mosetmamconnecttowork?mode=mdm&username=%s&servername=%s</a></h3>
+
+    <h1>MOSET MDM Connect to Work</h1>
+    <h3><a href="ms-cxh://mosetmdmconnecttowork" class="button-link">ms-cxh://mosetmdmconnecttowork</a></h3>
+
+    <h1>MOSET MSA Local</h1>
+    <h3><a href="ms-cxh://MOSETMSALOCAL" class="button-link">ms-cxh://MOSETMSALOCAL</a></h3>
+
+    <h1>MSACFL PIN Reset</h1>
+    <h3><a href="ms-cxh://MSACFLPINRESET" class="button-link">ms-cxh://MSACFLPINRESET</a></h3>
+
+    <h1>MSACFL PIN Reset Sign-In</h1>
+    <h3><a href="ms-cxh://MSACFLPINRESETSIGNIN" class="button-link">ms-cxh://MSACFLPINRESETSIGNIN</a></h3>
+
+    <h1>MSACXS Sign-In Auth Only</h1>
+    <h3><a href="ms-cxh://MSACXSIGNINAUTHONLY" class="button-link">ms-cxh://MSACXSIGNINAUTHONLY</a></h3>
+
+    <h1>MSACXS Sign-In PIN Add</h1>
+    <h3><a href="ms-cxh://MSACXSIGNINPINADD" class="button-link">ms-cxh://MSACXSIGNINPINADD</a></h3>
+
+    <h1>MSACXS Sign-In PIN Reset</h1>
+    <h3><a href="ms-cxh://MSACXSIGNINPINRESET" class="button-link">ms-cxh://MSACXSIGNINPINRESET</a></h3>
+
+    <h1>MSAPIN Enroll</h1>
+    <h3><a href="ms-cxh://MSAPINENROLL" class="button-link">ms-cxh://MSAPINENROLL</a></h3>
+
+    <h1>MSAPIN Reset</h1>
+    <h3><a href="ms-cxh://MSAPINRESET" class="button-link">ms-cxh://MSAPINRESET</a></h3>
+
+    <h1>MSARDX</h1>
+    <h3><a href="ms-cxh://MSARDX" class="button-link">ms-cxh://MSARDX</a></h3>
+
+    <h1>MSASSPR</h1>
+    <h3><a href="ms-cxh://MSASSPR" class="button-link">ms-cxh://MSASSPR</a></h3>
+
+    <h1>NTH</h1>
+    <h3><a href="ms-cxh://NTH" class="button-link">ms-cxh://NTH</a></h3>
+
+    <h1>NTH AAD Recovery</h1>
+    <h3><a href="ms-cxh://NTH/AADRECOVERY" class="button-link">ms-cxh://NTH/AADRECOVERY</a></h3>
+
+    <h1>NTH AAD NGCFIXME</h1>
+    <h3><a href="ms-cxh://NTHAADNGCFIXME" class="button-link">ms-cxh://NTHAADNGCFIXME</a></h3>
+
+    <h1>NTH AAD NGCONLY</h1>
+    <h3><a href="ms-cxh://NTHAADNGCONLY" class="button-link">ms-cxh://NTHAADNGCONLY</a></h3>
+
+    <h1>NTH AAD NGCRESET</h1>
+    <h3><a href="ms-cxh://NTHAADNGCRESET" class="button-link">ms-cxh://NTHAADNGCRESET</a></h3>
+
+    <h1>NTH AAD NGCRESET DESTRUCTIVE</h1>
+    <h3><a href="ms-cxh://NTHAADNGCRESETDESTRUCTIVE
+
+" class="button-link">ms-cxh://NTHAADNGCRESETDESTRUCTIVE</a></h3>
+
+    <h1>NTH AAD NGCRESET NON-DESTRUCTIVE</h1>
+    <h3><a href="ms-cxh://NTHAADNGCRESETNONDESTRUCTIVE" class="button-link">ms-cxh://NTHAADNGCRESETNONDESTRUCTIVE</a></h3>
+
+    <h1>NTH AAD ORMDM</h1>
+    <h3><a href="ms-cxh://NTHAADORMDM?ngc=enabled" class="button-link">ms-cxh://NTHAADORMDM?ngc=enabled</a></h3>
+
+    <h1>NTH ENT NGCFIXME</h1>
+    <h3><a href="ms-cxh://NTHENTNGCFIXME" class="button-link">ms-cxh://NTHENTNGCFIXME</a></h3>
+
+    <h1>NTH ENT NGCONLY</h1>
+    <h3><a href="ms-cxh://NTHENTNGCONLY" class="button-link">ms-cxh://NTHENTNGCONLY</a></h3>
+
+    <h1>NTH ENT NGCRESET</h1>
+    <h3><a href="ms-cxh://NTHENTNGCRESET" class="button-link">ms-cxh://NTHENTNGCRESET</a></h3>
+
+    <h1>NTH ENT NGCRESET DESTRUCTIVE</h1>
+    <h3><a href="ms-cxh://NTHENTNGCRESETDESTRUCTIVE" class="button-link">ms-cxh://NTHENTNGCRESETDESTRUCTIVE</a></h3>
+
+    <h1>NTH ENT ORMDM</h1>
+    <h3><a href="ms-cxh://NTHENTORMDM" class="button-link">ms-cxh://NTHENTORMDM</a></h3>
+
+    <h1>NTH ENT ORMDM with NGC Enabled</h1>
+    <h3><a href="ms-cxh://NTHENTORMDM?ngc=enabled" class="button-link">ms-cxh://NTHENTORMDM?ngc=enabled</a></h3>
+
+    <h1>NTH NGC Upsell</h1>
+    <h3><a href="ms-cxh://NTHNGCUPSELL" class="button-link">ms-cxh://NTHNGCUPSELL</a></h3>
+
+    <h1>NTH Privacy</h1>
+    <h3><a href="ms-cxh://NTHPRIVACY" class="button-link">ms-cxh://NTHPRIVACY</a></h3>
+
+    <h1>RDX RAC SKU Inclusive</h1>
+    <h3><a href="ms-cxh://RDXRACSKUINCLUSIVE" class="button-link">ms-cxh://RDXRACSKUINCLUSIVE</a></h3>
+
+    <h1>SCOOBE</h1>
+    <h3><a href="ms-cxh://SCOOBE" class="button-link">ms-cxh://SCOOBE</a></h3>
+
+    <h1>SCOOBE Upgrade</h1>
+    <h3><a href="ms-cxh://SCOOBE/UPGRADE" class="button-link">ms-cxh://SCOOBE/UPGRADE</a></h3>
+
+    <h1>SETADD Local Only</h1>
+    <h3><a href="ms-cxh://SETADDLOCALONLY" class="button-link">ms-cxh://SETADDLOCALONLY</a></h3>
+
+    <h1>SETADD New User</h1>
+    <h3><a href="ms-cxh://SETADDNEWUSER" class="button-link">ms-cxh://SETADDNEWUSER</a></h3>
+
+    <h1>SETCHANGE Password</h1>
+    <h3><a href="ms-cxh://SETCHANGEPWD" class="button-link">ms-cxh://SETCHANGEPWD</a></h3>
+
+    <h1>SETPHONE Pairing</h1>
+    <h3><a href="ms-cxh://SETPHONEPAIRING" class="button-link">ms-cxh://SETPHONEPAIRING</a></h3>
+
+    <h1>SETPHONE Pairing with SwiftKey Cloud Clipboard Scenario</h1>
+    <h3><a href="ms-cxh://SETPHONEPAIRING?scenarioId=SwiftKeyCloudClipboard" class="button-link">ms-cxh://SETPHONEPAIRING?scenarioId=SwiftKeyCloudClipboard</a></h3>
+
+    <h1>SETSQSA Local Only</h1>
+    <h3><a href="ms-cxh://setsqsalocalonly" class="button-link">ms-cxh://setsqsalocalonly</a></h3>
+
+    <h1>TSET Add Family</h1>
+    <h3><a href="ms-cxh://TSET/ADDFAMILY" class="button-link">ms-cxh://TSET/ADDFAMILY</a></h3>
+
+    <h1>WLT</h1>
+    <h3><a href="ms-cxh://WLT" class="button-link">ms-cxh://WLT</a></h3>
+
+    <h1>WLT UC</h1>
+    <h3><a href="ms-cxh://WLTUC" class="button-link">ms-cxh://WLTUC</a></h3>
+</div>
+```
+</body>
+</html>
